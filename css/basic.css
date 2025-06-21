@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto";
+}
+/*MENU TOP*/
+.container nav .top-menu{
+    background-color: #000;
+    color: #FFF;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+}
+.container nav .top-menu ul{
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    text-align: center;
+    margin: 0 auto;
+}
+li.menu-style-switch{
+     list-style: none;
+     margin: 0 6px;
+     text-align: center;
+}
+li.menu-style-switch a{
+    color: #000;
+    padding: 5px 10px;
+    text-decoration: none;
+    background-color: rgb(194, 194, 194);
+    border-radius: 4px;
+}
+/**/
+.content{
+    /* border: 1px solid red; */
+    width: auto;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: block;
+    height: auto;
+    padding: 0 20px;
+    font: normal normal 400 16px/20px "Roboto";
+    color: #666;
+
+}
+.content picture{
+    /* border: 1px solid red; */
+    display: block;
+    text-align: center;
+    margin: 20px 5px;
+}
+.content h1{
+    text-align: center;
+    margin: 20px 0;
+}
+.content p{
+    text-align: center;
+    font-size: 14px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.mobileView{
+    border: 1px solid #d4d4d4;
+    margin: 60px 0px;
+    padding: 20px;
+    box-sizing: border-box;
+    /* border-radius: 20px;
+    max-width: 375px;
+    height: 720px; */
+    overflow: hidden;
+}
+.mobileView .form{
+    margin-top: 40px;
+    padding: 0 10px;
+    display: flex;
+    flex-flow: column;
+    /* border: 1px solid red; */
+}
+.mobileView .form input{
+    height: 40px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    border-radius: 0px;
+    border: 1px solid #a7a7a7;
+
+}
+.mobileView h2{
+    font-size: 18px;
+    margin: 15px 0;
+}

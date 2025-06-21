@@ -1,11 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Miguel Valdivia UI</title>
+    <link id="styleSwitch" rel="stylesheet" href="./css/basic.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="container">
+        <nav>
+            <div class="top-menu">
+                <ul>
+                    <li class="menu-style-switch"><a href="#" onclick="swapStylesheet('./css/basic.css')">Básico</a></li>
+                    <li class="menu-style-switch"><a href="#" onclick="swapStylesheet('./css/old-school.css')">Antigüo</a></li>
+                    <li class="menu-style-switch"><a href="#" onclick="swapStylesheet('./css/classic.css')">Clásico</a></li>
+                    <li class="menu-style-switch"><a href="#" onclick="swapStylesheet('./css/dark.css')">Oscuro</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="content">
+            <div>
+                <picture>
+                    <img src="./image/foto-bn.png">
+                </picture>
+                <h1>Extracto</h1>
+                <p>Me llamo Miguel Valdivia, soy Comunicador Gráfico con más de 20 años de experiencia en el mundo del diseño, el desarrollo web y la creación de experiencias visuales innovadoras. Mi enfoque se centra en la fusión entre el diseño estético y la funcionalidad, creando interfaces de sitios web intuitivos y visualmente atractivos. A lo largo de mi carrera, he trabajado en proyectos desafiantes, colaborando en equipos multidisciplinarios, y siempre buscando incorporar nuevas tecnologías y herramientas que mejoren los productos finales.</p>
+            </div>
+            <div class="mobileView">
+                <h1>Material Design UI</h1>
+                <p>A continuación dejaré unas muestras de material design Ui para ser usada como guía.</p>
+                <div class="form">
+                    <h1>Formularios</h1>
+
+                    <h2>Input type Text</h2>
+
+                        <label for="nombre" >
+                            Nombre:
+                            <input type="text" name="nombre" id="nombre" >
+                        </label>
+
+                        <input type="text" name="nombre" placeholder="Nombre">
+                    <h2>Input type Password</h2>    
+
+                        <input type="password" placeholder="Password">
+                        
+                    
+                </div>
+            </div>
+        </div>
+    </div>
     
+    <script src="./js/styles.js"></script>
 </body>
 </html>
