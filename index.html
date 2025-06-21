@@ -10,17 +10,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="all-container">
+
     <div class="container">
-        <nav>
-            <div class="top-menu">
-                <ul>
-                    <li class="menu-item"><a href="./index.html">Proyectos</a></li>
-                    <li class="menu-item"><a href="#">Currículum</a></li>
-                    <li class="menu-item"><a href="#">Colaboraciones</a></li>
-                    <li class="menu-item"><a href="#">Lab</a></li>
-                </ul>
-            </div>
-        </nav>
+        <div class="nav-mobile">
+              <input type="checkbox" id="clickHam">
+              <label  id="burger" for="clickHam">
+                <div class="menu-mb" >
+                  <span class="barmenu"></span>
+                  <span class="barmenu"></span>
+                  <span class="barmenu"></span>
+
+                </div>
+              </label>
+             
+                <label for="clickHam"><div class="lat" id="lat"></div></label>
+                <div class="menu-mobile">
+                    
+                    <ul class="nav-links">
+                    <li><a href="#">Proyectos</a></li>
+                    <li><a href="./experiencia.html">Experiencia</a></li>
+                    <li><a href="./colaboraciones.html">Colaboraciones</a></li>
+                    <li><a href="#">Lab</a></li>
+                    </ul>
+                </div>
+              
+        </div><!-- End .nav-mobile-->
         <div class="container-">
         <div class="content-box" >
             <div class="image">
@@ -28,7 +43,12 @@
                     <img src="./image/foto-color.png">
                 </picture>
             </div>
-            <div class="box-home"></div>
+            <div class="box-home">
+                <h1>Miguel Valdivia Calvo</h1>
+                <h3>SEO Specialist<br>
+UX/UI Designer<br>
+UI Developer</h3>
+            </div>
 
  
         </div>
@@ -50,7 +70,7 @@
         </nav>
         
     </div>
-    
+    </div>
     <script src="./js/styles.js"></script>
 </body>
 </html>
