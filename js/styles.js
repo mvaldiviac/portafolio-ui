@@ -15,16 +15,28 @@ function initate() {
        style4.onclick = swapStyleSheet("css/dark.css");
    }
 
-function changeStyle() {
-    var inputSwitch = document.getElementById("switch-style");
+// function changeStyle() {
+//     var inputSwitch = document.getElementById("switch-style");
 
     
-    if(inputSwitch.checked){
-        console.log('Checqueado');
+//     if(inputSwitch.checked){
+//         console.log('Checqueado');
         
-    }
+//     }
     
-}
+// }
+
+//TOGGLE SWITCH ACCESIBILITY
+const contenedor = document.querySelector('#all-container');
+const switchs = document.querySelector('#switch');
+
+switchs.addEventListener('click',()=>{
+  // if(switchs.checked){
+  //   console.log('switch');
+  // }
+   contenedor.classList.toggle("dark");
+  
+})
 
 //USO DE MENU
 const menu = document.querySelector('.menu-mb');

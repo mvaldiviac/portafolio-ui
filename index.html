@@ -10,64 +10,122 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="all-container">
+    <div class="all-container" id="all-container">
 
     <div class="container">
-        <div class="nav-mobile">
-              <input type="checkbox" id="clickHam">
-              <label  id="burger" for="clickHam">
-                <div class="menu-mb" >
-                  <span class="barmenu"></span>
-                  <span class="barmenu"></span>
-                  <span class="barmenu"></span>
+        <div class="navback">
 
+            <div class="logo">
+                    <img src="./image/logo-curriculum-mvc 1.png">
                 </div>
-              </label>
-             
-                <label for="clickHam"><div class="lat" id="lat"></div></label>
-                <div class="menu-mobile">
-                    
-                    <ul class="nav-links">
-                    <li><a href="#">Proyectos</a></li>
-                    <li><a href="./experiencia.html">Experiencia</a></li>
-                    <li><a href="./colaboraciones.html">Colaboraciones</a></li>
-                    <li><a href="#">Lab</a></li>
+            <div class="nav">
+                <div class="logo">
+                    <img src="./image/logo-curriculum-mvc 1.png">
+                </div>
+                <div class="menu">
+                    <ul class="links">
+                        <li><a class="active" href="#">Presentación</a></li>
+                        <li><a href="#">Experiencia</a></li>
+                        <li><a href="#">Proyectos</a></li>
+                        <li><a href="#">Colaboraciones</a></li>
+                        <li><a href="#">Lab</a></li>
+                        <li><a href="#">Artista</a></li>
                     </ul>
                 </div>
-              
-        </div><!-- End .nav-mobile-->
+                <!---->
+                <div class="access">
+                    <span class="icon-s"><img src="./image/sun.png"></span>
+                    <label class="switch">
+                        
+                        <input id="switch" type="checkbox">
+                        <span class="slider round"></span>
+                        
+                    </label>
+                    <span class="icon-m"><img src="./image/moon.png"></span>
+                    <!-- <img src="./image/accessibility.png"> -->
+                </div>
+                <!---->
+            </div>
+            <div class="nav-mobile">
+                <input type="checkbox" id="clickHam">
+                <label  id="burger" for="clickHam">
+                    <div class="menu-mb" >
+                    <span class="barmenu"></span>
+                    <span class="barmenu"></span>
+                    <span class="barmenu"></span>
+
+                    </div>
+                </label>
+                
+                    <label for="clickHam"><div class="lat" id="lat"></div></label>
+                    <div class="menu-mobile">
+                        
+                        <ul class="nav-links">
+                        <li><a href="#">Presentación</a></li>
+                        <li><a href="#">Experiencia</a></li>
+                        <li><a href="#">Proyectos</a></li>
+                        <li><a href="#">Colaboraciones</a></li>
+                        <li><a href="#">Lab</a></li>
+                        <li><a href="#">Artista</a></li>
+                        </ul>
+                    </div>
+                
+            </div><!-- End .nav-mobile-->
+        </div>
+
+
+
+
+
         <div class="container-">
-        <div class="content-box" >
-            <div class="image">
-                <picture>
-                    <img src="./image/foto-color.png">
-                </picture>
+            <div class="content-box" >
+                <div class="image">
+                    <picture>
+                        <img src="./image/foto-color.png">
+                    </picture>
+                </div>
+                <div class="box-home">
+                    <h1>Miguel Valdivia Calvo</h1>
+                    <h3>SEO Specialist, UX/UI Designer, UI Developer</h3>
+    <p>Soy Comunicador Gráfico con más de 20 años de experiencia en el mundo del diseño, el desarrollo web y la creación de experiencias visuales innovadoras. Mi enfoque se centra en la fusión entre el diseño estético y la funcionalidad, creando interfaces de sitios web intuitivos y visualmente atractivos. A lo largo de mi carrera, he trabajado en proyectos desafiantes, colaborando en equipos multidisciplinarios, y siempre buscando incorporar nuevas tecnologías y herramientas que mejoren los productos finales.</p>
+                </div>
+
+                <div class="box-home icons">
+                    <h2>Competencia y Habilidades</h2>
+                    <ul>
+                        <li><img src="./image/Group 30.png"></li>
+                        <li><img src="./image/Group 31.png"></li>
+                        <li><img src="./image/Group 32.png"></li>
+                        <li><img src="./image/Group 33.png"></li>
+                        <li><img src="./image/Group 34.png"></li>
+                        <li><img src="./image/Group 35.png"></li>
+                        <li><img src="./image/Group 36.png"></li>
+                        <li><img src="./image/Group 37.png"></li>
+                        <li><img src="./image/Group 38.png"></li>
+                        <li><img src="./image/Group 40.png"></li>
+                        <li><img src="./image/Group 41.png"></li>
+                        <li><img src="./image/Group 42.png"></li>
+                    </ul>
+                </div>
+
+    
             </div>
-            <div class="box-home">
-                <h1>Miguel Valdivia Calvo</h1>
-                <h3>SEO Specialist<br>
-UX/UI Designer<br>
-UI Developer</h3>
-            </div>
-
- 
-        </div>
         </div>
 
 
 
 
 
-        <nav>
+        <!-- <nav>
             <div class="top-menu">
                 <ul>
                     <li class="menu-style-switch"><a href="#" onclick="swapStylesheet('./css/basic.css')">Básico</a></li>
-                    <!-- <li class="menu-style-switch"><a href="#" onclick="swapStylesheet('./css/old-school.css')">Antigüo</a></li>
-                    <li class="menu-style-switch"><a href="#" onclick="swapStylesheet('./css/classic.css')">Clásico</a></li> -->
+                     <li class="menu-style-switch"><a href="#" onclick="swapStylesheet('./css/old-school.css')">Antigüo</a></li>
+                    <li class="menu-style-switch"><a href="#" onclick="swapStylesheet('./css/classic.css')">Clásico</a></li> 
                     <li class="menu-style-switch"><a href="#" onclick="swapStylesheet('./css/dark.css')">Oscuro</a></li>
                 </ul>
             </div>
-        </nav>
+        </nav> -->
         
     </div>
     </div>
