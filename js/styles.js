@@ -31,7 +31,7 @@
     switchElementMb.addEventListener('change', function () {
       if (this.checked) {
         document.body.classList.add(darkClass);
-        console.log('Hola');
+       // console.log('Hola');
         localStorage.setItem('theme', 'dark');
       } else {
         document.body.classList.remove(darkClass);
@@ -59,4 +59,23 @@ lat.addEventListener('click',()=>{
 })
 
 
+// USO DE TAMAÑO DE MENU AL BAJAR SCROLL
 
+const header = document.querySelector("#navbar");
+
+header.addEventListener('scrollY', () =>{
+  if (header.scrollY > 50) {
+      navbar.classList.add('shrink');
+    } else {
+      navbar.classList.remove('shrink');
+    }
+});
+
+  // window.addEventListener('scroll', () => {
+  //   const navbar = document.getElementById('navbar');
+  //   if (window.scrollY > 100) {
+  //     navbar.classList.add('shrink');
+  //   } else {
+  //     navbar.classList.remove('shrink');
+  //   }
+  // });
