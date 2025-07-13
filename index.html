@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Miguel Valdivia UI</title>
     <link id="styleSwitch" rel="stylesheet" href="./css/basic.css">
+    <!-- <link id="swap" rel="stylesheet" href="./css/style.css" /> -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="./css/swiper-bundle.min.css" /> -->
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" />
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -16,16 +23,20 @@
         <div class="navback">
 
             <div class="logo">
+                <a href="index.html">
                     <img src="./image/logo-curriculum-mvc 1.png">
-                </div>
+                </a>
+            </div>
             <div class="nav">
                 <div class="logo">
-                    <img src="./image/logo-curriculum-mvc 1.png">
+                    <a href="index.html">
+                        <img src="./image/logo-curriculum-mvc 1.png">
+                    </a>
                 </div>
                 <div class="menu">
                     <ul class="links">
                         <li><a class="active" href="#">Presentación</a></li>
-                        <li><a href="#">Experiencia</a></li>
+                        <li><a href="experience.html">Experiencia</a></li>
                         <li><a href="#">Proyectos</a></li>
                         <li><a href="#">Colaboraciones</a></li>
                         <li><a href="#">Lab</a></li>
@@ -35,11 +46,9 @@
                 <!---->
                 <div class="access">
                     <span class="icon-s"><img src="./image/sun.png"></span>
-                    <label class="switch">
-                        
+                    <label class="switch">   
                         <input id="switch" type="checkbox">
                         <span class="slider round"></span>
-                        
                     </label>
                     <span class="icon-m"><img src="./image/moon.png"></span>
                     <!-- <img src="./image/accessibility.png"> -->
@@ -62,7 +71,7 @@
                         
                         <ul class="nav-links">
                         <li><a href="#">Presentación</a></li>
-                        <li><a href="#">Experiencia</a></li>
+                        <li><a href="experience.html">Experiencia</a></li>
                         <li><a href="#">Proyectos</a></li>
                         <li><a href="#">Colaboraciones</a></li>
                         <li><a href="#">Lab</a></li>
@@ -86,9 +95,74 @@
                 </div>
                 <div class="box-home">
                     <h1>Miguel Valdivia Calvo</h1>
-                    <h3>SEO Specialist, UX/UI Designer, UI Developer</h3>
+                    <h3>Web Designer, SEO Specialist, UI Designer</h3>
     <p>Soy Comunicador Gráfico con más de 20 años de experiencia en el mundo del diseño, el desarrollo web y la creación de experiencias visuales innovadoras. Mi enfoque se centra en la fusión entre el diseño estético y la funcionalidad, creando interfaces de sitios web intuitivos y visualmente atractivos. A lo largo de mi carrera, he trabajado en proyectos desafiantes, colaborando en equipos multidisciplinarios, y siempre buscando incorporar nuevas tecnologías y herramientas que mejoren los productos finales.</p>
+    <br>
+    <p>Soy un profesional adaptable y con experiencia que tu empresa o agencia necesita para crecer.</p>
+    <div class="cta">
+        <a class="btn-cta" href="#">Revisa mis proyectos</a>
+        <a class="btn-cta" href="#">Mándame un WhatsApp</a>
+    </div>
+    
                 </div>
+               
+               
+               <!--
+                <div class="caroussel">
+                    <div class="caluga">Proyectos</div>
+                    <div class="caluga">Colaboraciones</div>
+                    <div class="caluga">Laboratorio</div>
+                    <div class="caluga">Artista visual</div>
+                </div>
+-->
+          
+        <!---->
+<section class="card-slide">
+  <div class="swiper slide-content slide-container">
+    <!-- <div class="slide-content"> -->
+        <div class="card-wrapper swiper-wrapper">
+        <!---->
+            <div class="card swiper-slide">
+                
+                <div class="card-content">
+                    <a href="#"><img src="./image/img-prueba.png" /></a>
+                </div>
+            </div>
+        <!---->
+            <div class="card swiper-slide">
+
+                <div class="card-content">
+                    <a href="#"><img src="./image/img-prueba.png" /></a>
+                </div>
+            </div>
+        <!---->
+            <div class="card swiper-slide">
+                
+                <div class="card-content">
+                <a href="#"><img src="./image/img-prueba.png" /></a>
+                </div>
+            </div>
+        <!---->
+            <div class="card swiper-slide">
+                
+                <div class="card-content">
+                <a href="#"><img src="./image/img-prueba.png" /></a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    <!-- <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div> -->
+    
+  </div>
+  <!-- </div> -->
+</section>
+
+<!---->
+
+
+
+
 
                 <div class="box-home icons">
                     <h2>Competencia y Habilidades</h2>
@@ -114,21 +188,34 @@
 
 
 
+<div class="bottom-menu-mobile">
+    <div class="btn">
+        <a href="#" target="_blank">
+            <img src="./image/download.png">
+        </a>
+    </div>
+    <!-- <div class="btn">A</div> -->
+    <div class="accessMb">
+        <span class="icon-s"><img src="./image/sun.png"></span>
+        <label class="switch">   
+            <input id="switch-mb" type="checkbox">
+            <span class="slider round"></span>
+        </label>
+        <span class="icon-m"><img src="./image/moon.png"></span>
+        <!-- <img src="./image/accessibility.png"> -->
+    </div>
+</div>
 
-
-        <!-- <nav>
-            <div class="top-menu">
-                <ul>
-                    <li class="menu-style-switch"><a href="#" onclick="swapStylesheet('./css/basic.css')">Básico</a></li>
-                     <li class="menu-style-switch"><a href="#" onclick="swapStylesheet('./css/old-school.css')">Antigüo</a></li>
-                    <li class="menu-style-switch"><a href="#" onclick="swapStylesheet('./css/classic.css')">Clásico</a></li> 
-                    <li class="menu-style-switch"><a href="#" onclick="swapStylesheet('./css/dark.css')">Oscuro</a></li>
-                </ul>
-            </div>
-        </nav> -->
+<footer>version: 3.0.1 <br> julio 2025</footer>
         
     </div>
     </div>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript" ></script>
     <script src="./js/styles.js"></script>
+    <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+    <!-- <script src="./js/index.js"></script> -->
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- <script src="./js/swiper-bundle.min.js"></script> -->
 </body>
 </html>

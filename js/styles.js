@@ -1,42 +1,47 @@
-//Funcion controla cambio de estilo css
-function swapStylesheet(sheet) {
-    document.getElementById('styleSwitch').setAttribute('href', sheet);
-}
 
-function initate() {
-       var style1 = document.getElementById("stylesheet1");
-       var style2 = document.getElementById("stylesheet2");
-       var style3 = document.getElementById("stylesheet3");
-       var style4 = document.getElementById("stylesheet4");
-  
-       style1.onclick = swapStyleSheet("css/basic.css");
-       style2.onclick = swapStyleSheet("css/old-school.css");
-       style3.onclick = swapStyleSheet("css/classic.css");
-       style4.onclick = swapStyleSheet("css/dark.css");
-   }
+// USO DE THEME DARK
+  const contenedor = document.querySelector('#all-container');
+  const switchs = document.querySelector('#switch');
+  const switchsMb = document.querySelector('#switch-mb');
+  const switchElement = document.getElementById('switch');
+  const switchElementMb = document.getElementById('switch-mb');
+  const darkClass = 'dark';
 
-// function changeStyle() {
-//     var inputSwitch = document.getElementById("switch-style");
+  // Aplicar tema si estaba activado
+  if (localStorage.getItem('theme') === 'dark') {
+    document.body.classList.add(darkClass);
+    if (switchElement) switchElement.checked = true;
+    if (switchElementMb) switchElementMb.checked = true;
+  }
 
-    
-//     if(inputSwitch.checked){
-//         console.log('Checqueado');
-        
-//     }
-    
-// }
+  // Evento para cambiar el tema
+  if (switchElement) {
+    switchElement.addEventListener('change', function () {
+      if (this.checked) {
+        document.body.classList.add(darkClass);
+        localStorage.setItem('theme', 'dark');
+      } else {
+        document.body.classList.remove(darkClass);
+        localStorage.setItem('theme', 'light');
+      }
+    });
+  }
+// EVENTO CAMBIA THEME MOBILE
+  if (switchElementMb) {
+    switchElementMb.addEventListener('change', function () {
+      if (this.checked) {
+        document.body.classList.add(darkClass);
+        console.log('Hola');
+        localStorage.setItem('theme', 'dark');
+      } else {
+        document.body.classList.remove(darkClass);
+        localStorage.setItem('theme', 'light');
+      }
+    });
+  }
 
-//TOGGLE SWITCH ACCESIBILITY
-const contenedor = document.querySelector('#all-container');
-const switchs = document.querySelector('#switch');
 
-switchs.addEventListener('click',()=>{
-  // if(switchs.checked){
-  //   console.log('switch');
-  // }
-   contenedor.classList.toggle("dark");
-  
-})
+
 
 //USO DE MENU
 const menu = document.querySelector('.menu-mb');
@@ -52,3 +57,6 @@ lat.addEventListener('click',()=>{
   lat.classList.toggle("cheked");
   menu.classList.toggle("active");
 })
+
+
+
