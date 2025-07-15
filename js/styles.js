@@ -60,9 +60,7 @@ lat.addEventListener('click',()=>{
 
 
 // USO DE TAMAÑO DE MENU AL BAJAR SCROLL
-
 const header = document.querySelector("#navbar");
-
 header.addEventListener('scrollY', () =>{
   if (header.scrollY > 50) {
       navbar.classList.add('shrink');
@@ -71,11 +69,27 @@ header.addEventListener('scrollY', () =>{
     }
 });
 
-  // window.addEventListener('scroll', () => {
-  //   const navbar = document.getElementById('navbar');
-  //   if (window.scrollY > 100) {
-  //     navbar.classList.add('shrink');
-  //   } else {
-  //     navbar.classList.remove('shrink');
-  //   }
-  // });
+// USO DE SORTING VIEW
+const sorting = document.querySelector("#sorting-option-view");
+const linkGrid = document.querySelector(".sorting-btn.grid");
+const linkList = document.querySelector(".sorting-btn.list");
+
+linkGrid.addEventListener('click',()=>{
+  sorting.classList.add("grid");
+})
+linkList.addEventListener('click',()=>{
+  sorting.classList.remove("grid");
+})
+
+//MODAL PROYECTOS
+const portfolio = document.querySelector('#portfolio');
+const bgModal = document.querySelector('#bg-modal');
+const closeBtn = document.querySelector('#close-btn');
+
+portfolio.addEventListener('click',()=>{
+  bgModal.classList.add("active");
+})
+closeBtn.addEventListener('click',()=>{
+  bgModal.classList.remove("active");
+  //closeBtn.classList.remove("active");
+})

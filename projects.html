@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miguel Valdivia UI</title>
+    <link id="styleSwitch" rel="stylesheet" href="./css/basic.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="all-container" id="all-container">
+
+    <div class="container">
+        <header id="navbar">
+            <div class="navback">
+
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./image/logo-curriculum-mvc 1.png">
+                </a>
+            </div>
+            <div class="nav">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="./image/logo-curriculum-mvc 1.png">
+                    </a>
+                </div>
+                <div class="menu">
+                    <ul class="links">
+                        <li><a href="./index.html">Presentación</a></li>
+                        <li><a href="./experience.html">Experiencia</a></li>
+                        <li><a class="active" href="#">Proyectos</a></li>
+                        <li><a href="#">Colaboraciones</a></li>
+                        <li><a href="#">Lab</a></li>
+                        <li><a href="#">Artista</a></li>
+                    </ul>
+                </div>
+                <!---->
+                <div class="access">
+                    <span class="icon-s"><img src="./image/sun.png"></span>
+                    <label class="switch">   
+                        <input id="switch" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                    <span class="icon-m"><img src="./image/moon.png"></span>
+                    <!-- <img src="./image/accessibility.png"> -->
+                </div>
+                <!---->
+            </div>
+            <div class="nav-mobile">
+                <input type="checkbox" id="clickHam">
+                <label  id="burger" for="clickHam">
+                    <div class="menu-mb" >
+                    <span class="barmenu"></span>
+                    <span class="barmenu"></span>
+                    <span class="barmenu"></span>
+
+                    </div>
+                </label>
+                
+                    <label for="clickHam"><div class="lat" id="lat"></div></label>
+                    <div class="menu-mobile">
+                        
+                        <ul class="nav-links">
+                        <li><a href="./index.html">Presentación</a></li>
+                        <li><a href="./experience.html">Experiencia</a></li>
+                        <li><a href="#">Proyectos</a></li>
+                        <li><a href="#">Colaboraciones</a></li>
+                        <li><a href="#">Lab</a></li>
+                        <li><a href="#">Artista</a></li>
+                        </ul>
+                    </div>
+                
+            </div><!-- End .nav-mobile-->
+        </div>
+        </header>
+
+
+
+
+
+        <div class="container-">
+            <div class="sorting-view">
+                <div class="sorting-options">
+                    <a class="sorting-btn grid" href="#"></a>
+                    <a class="sorting-btn list" href="#"></a>
+                </div>
+            </div>
+            <div class="option-cards-view" id="sorting-option-view">
+            <ul class="cards-projects">
+                <li class="projects">
+                    <a href="#" class="card-link" id="portfolio">
+                        <h2>Portafolio UI</h2>
+                        <div class="box-project">
+                            <img src="./image/project-portfolio-ui.png">
+                            <p>Proyecto de Portafolio personal de proyectos, currículum y demostración de habilidades en UI, HTML, CSS, Figma y JS. </p>  
+                        </div>
+                        
+                    </a>
+                </li>
+                <div class="content-project-portfolio" id="bg-modal">
+                    <div class="content-project" id="open-project">
+                        <div id="close-btn"></div>
+                        <h3>Desarrollo de Portafolio UI</h3>
+                        <p>He desarrollado este portafolio partiendo con la confección de un Design System armando con Figma incluyendo la selección de colores, tipografías e íconos considerándolos como átomos según Atom Design, en especial el flujo componentes y organismos de pantallas.</p>
+                        <figure>
+                            <img src="./image/project-portfolio-ui.png">
+                            <img src="./image/portafolio-pantalla.png" >
+                            <img src="./image/portafolio-colores.png" >
+                            <img src="./image/portafolio-tipografia.png" >
+                            <img src="./image/portafolio-iconos.png" >
+                        </figure>
+                    </div>
+                </div>
+
+
+<!--
+                <li class="projects">
+                    <a href="#" class="card-link">
+                        <h2>Titulo descriptivo del proyecto</h2>
+                        <div class="box-project">
+                            <img src="./image/img-prueba.png">
+                            <p>Texto breve explicativo del proyecto Texto breve explicativo del proyecto Texto breve explicativo del proyecto Texto breve explicativo  </p>    
+                        </div>
+                        
+                    </a>
+                </li>
+                <li class="projects">
+                    <a href="#" class="card-link">
+                        <h2>Titulo descriptivo del proyecto</h2>
+                        <div class="box-project">
+                            <img src="./image/img-prueba.png">
+                            <p>Texto breve explicativo del proyecto Texto breve explicativo del proyecto Texto breve explicativo del proyecto Texto breve explicativo  </p>    
+                        </div>
+                        
+                    </a>
+                </li>
+-->
+            </ul>
+            </div>
+        </div>
+
+
+
+
+
+<footer>version: 3.0.1 <br> julio 2025</footer>
+        
+    </div>
+    </div>
+
+    <div class="bottom-menu-mobile">
+    <div class="btn">
+        <a href="#" target="_blank">
+            <img src="./image/download.png">
+        </a>
+    </div>
+    
+    <!-- <div class="btn">A</div> -->
+    <div class="accessMb">
+        <span class="icon-s"><img src="./image/sun.png"></span>
+        <label class="switch">   
+            <input id="switch-mb" type="checkbox">
+            <span class="slider round"></span>
+        </label>
+        <span class="icon-m"><img src="./image/moon.png"></span>
+        <!-- <img src="./image/accessibility.png"> -->
+    </div>
+</div>
+    <script src="./js/styles.js"></script>
+</body>
+</html>
