@@ -707,6 +707,10 @@ margin-top: 80px;
 section.card-slide{
   width: 730px;
 }
+section.card-slide h2{
+  color: #FFF;
+  text-align: center;
+}
 .swiper{
   padding: 40px 0 !important;
 }
@@ -881,13 +885,17 @@ section.card-slide{
 }
 .content-project-portfolio .content-project #close-btn{
   /* border: #0C467B 1px solid; */
-  text-align: right;
-  cursor: pointer;
-  height: 30px;
-  background-image: url(../image/close.png);
-  background-repeat: no-repeat;
-  background-position: 99% 4px;
-  background-size: 27px;
+    text-align: right;
+    cursor: pointer;
+    height: 30px;
+    background-image: url(../image/close.png);
+    background-repeat: no-repeat;
+    background-position: 95% 2px;
+    background-size: 27px;
+    width: 29px;
+    position: sticky;
+    left: 100%;
+    top: 0;
 }
 
 .content-project-portfolio .content-project h3{
@@ -902,7 +910,9 @@ section.card-slide{
   margin: 20px auto ;
   text-align: center;
 }
-
+.content-project-portfolio .content-project figure img{
+  margin-bottom: 20px;
+}
 
 
 
@@ -917,13 +927,16 @@ section.card-slide{
 
 footer{
   width: 100%;
-  height: 80px;
+  height: 40px;
   background-color: #000;
   color: #464646;
   font-size: 12px;
   text-align: center;
-  padding: 30px 0;
+  padding: 20px 0;
   box-sizing: content-box;
+  position: fixed;
+  bottom: 0px;
+  z-index: 99999;
 }
 
 .bottom-menu-mobile{
@@ -1118,5 +1131,9 @@ input#switch-mb:focus{
   margin: 20px auto ;
   text-align: center;
   width: 100%;
+}
+.card-content a img{
+  height: 200px;
+  width: auto;
 }
 }
