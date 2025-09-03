@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kit one</title>
+    <link rel="stylesheet" href="./css/kit-one.css">
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="content-container">
+        <!-- <header>
+            <div class="logo">
+              <a href="../">
+                <img src="../images/logo2.png">
+              </a>
+            </div>
+            <nav>
+              <input type="checkbox" id="check">
+              <label for="check" class="checkbtn">
+                <span class="menu-bar bar1"></span>
+                <span class="menu-bar bar2"></span>
+                <span class="menu-bar bar3"></span>
+              </label>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="#">Kit One</a></li>
+                    <li><a href="../kit-two/">Kit Two</a></li>
+                </ul>
+            </nav>
+          </header> -->
+          <section class="section-one">
+            <!-- Columna 1-->
+            <div class="col-1">
+                <div class="button-primary">
+                    <button>button</button>
+                </div>
+                <div class="button-secundary">
+                    <button>button</button>
+                </div>
+                <form>
+                    <div class="search">
+                        <input type="text" id="search" placeholder="Search..." /><button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="search">
+                        <input type="text" id="search" placeholder="Search..." /><button type="submit" class="solo-lupa"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </div>
+                </form>
+                <div class="menu-icons">
+                    <ul>
+                        <li><a href="#"><i class="fa-regular fa-star"></i></a></li>
+                        <li><a href="#"><i class="fa-regular fa-comment"></i><span class="circle"></span></a></li>
+                        <li><a href="#"><i class="fa-regular fa-bookmark"></i></a></li>
+                        <li><a href="#"><i class="fa-regular fa-lemon"></i></a></li>
+                        <li><a href="#"><i class="fa-regular fa-lightbulb"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Columna 2-->
+            <div class="col-2">
+                <div class="login">
+                    <form>
+                        <h1>Login box</h1>
+                        <label for="email">Email:</label>
+                        <input id="email" type="email" >
+                        <label for="pass">Password:</label>
+                        <div class="pass-eye">
+                          <input id="pass" type="password" class="pass" >
+                          <!--<button type="submit" class="eye" id="eye"><i class="fa-solid fa-eye-slash"></i></button>-->
+                          <input type="checkbox" id="ver" class="ver" onchange="hideOrShowPassword()" />
+                          <label for="ver" class="eye"><i id="icon" class="fa-solid fa-eye-slash"></i></label>
+                        </div>
+                        
+                        
+                        <div class="checkbox">
+                            <input type="checkbox" id="checkin">
+                            <label for="checkin" id="checkins"> Remember me</label>
+                        </div>
+                        <input type="submit" value="Sign in">
+                    </form>
+                </div>
+            </div>
+            <!-- Columna 3-->
+            <div class="col-3">
+              <div class="container-graphic">
+              
+              </div>
+                
+            </div>
+
+
+            <!-- Columna 4-->
+            <div class="col-4">
+              <div class="user-profile">
+                <div class="user-head">
+                  <h1>User profile</h1><span><i class="fa-solid fa-chevron-up"></i></span>
+                </div>
+                <div class="content-user">
+                  <div class="photo-user">
+                    <img src="./image/Team-1.jpg">
+                  </div>
+                  <div class="name-and-stars">
+                    <div class="name-user">Adam Suley</div>
+                    <div class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class="user-detail">
+                  <div class="user-email">
+                    <i class="fa-regular fa-envelope"></i>
+                    <span>user@email.com</span>
+                  </div>
+                  <div class="user-phone">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <span>+56 9 9999 9999</span>
+                  </div>
+                  <div class="user-address">
+                    <i class="fa-regular fa-address-card"></i>
+                    <span>Main Street, North Park 123, California</span>
+                  </div>
+                </div>
+                <div class="user-buttons">
+                  <div class="button-primary">
+                    <button>follow</button>
+                </div>
+                <div class="button-secundary">
+                    <button>message</button>
+                </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- <footer>
+            <div class="copyright">
+              © 2023 - todos los derechos reservados
+            </div>
+          </footer> -->
+    </div>
+    <script type="application/javascript" src="js/javascript.js"></script>
+</body>
+</html>
