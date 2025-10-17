@@ -15,10 +15,32 @@ body{
     margin: 0;
     padding: 0;
 }
+
+
+
+.btn-getback{
+  font: normal normal 500 18px/18px 'Roboto';
+  text-decoration: none;
+  color: #9C6FFC;
+  margin-bottom: 30px;
+  display: block;
+}
+.btn-getback:hover{
+  color: #3D04CC;
+}
+
+
+
+
+
+
+
+
 .content-container{
     background-color: var(--fondo) !important;
-    padding: 10%;
+    padding:30px 10% 10% 10%;
     min-height: 100%;
+    height: 100vh;
 }
 .section-one{
     padding: 0;
